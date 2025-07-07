@@ -76,6 +76,7 @@ func main() {
 	mux.HandleFunc("/api/recommendations", handleRecommendations)
 	mux.HandleFunc("/api/models/compare", handleCompare)
 	mux.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("api/img"))))
+	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("web"))))
 
 	fmt.Println("Server running on http://localhost:8080")
 	if err := http.ListenAndServe(":8080", logRequest(mux)); err != nil {
