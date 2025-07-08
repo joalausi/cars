@@ -1,33 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Cars Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarViewer</title>
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-  <h1>Cars Viewer</h1>
-  <section id="filters">
-    <input type="text" id="search" placeholder="Search by name">
-    <select id="manufacturerFilter"></select>
-    <select id="categoryFilter"></select>
-    <button id="filterButton">Filter</button>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CarViewer</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#vehicles">Vehicles</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Experience the road <span class="line-break">like never before</span></h1>
+      <p>Discover your perfect ride from a wide selection of top manufacturers, categories and years—all in one place.</p>
+      <button class="btn-primary">View All Cars</button>
+    </div>
+    <div class="hero-image"></div>
+  </header>
+
+  <!-- Search Form -->
+  <section class="search-section">
+    <h2>Find your car</h2>
+    <form id="searchForm">
+      <select name="manufacturer">
+        <option>Manufacturer</option>
+        <option>BMW</option>
+        <option>Toyota</option>
+      </select>
+      <select name="category">
+        <option>Category</option>
+        <option>SUV</option>
+        <option>Sedan</option>
+      </select>
+      <select name="year">
+        <option>Year</option>
+        <option>2023</option>
+        <option>2022</option>
+      </select>
+      <button type="submit" class="btn-primary">Search now</button>
+    </form>
   </section>
 
-  <section>
-    <table id="carsTable">
-      <thead>
-        <tr><th>Select</th><th>Name</th><th>Year</th><th>Manufacturer</th><th>Category</th><th>Action</th></tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <div class="icon availability"></div>
+      <h3>Availability</h3>
+      <p>Find cars anywhere with real-time inventory.</p>
+    </div>
+    <div class="feature">
+      <div class="icon comfort"></div>
+      <h3>Comfort</h3>
+      <p>Smooth rides with premium interiors.</p>
+    </div>
+    <div class="feature">
+      <div class="icon savings"></div>
+      <h3>Savings</h3>
+      <p>Competitive pricing and great deals.</p>
+    </div>
   </section>
 
-  <button id="compareBtn">Compare Selected</button>
-
-  <section id="details"></section>
-  <section id="compare"></section>
-  <section id="recommendations"></section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CarViewer. All rights reserved.</p>
+  </footer>
 
   <script src="/static/script.js"></script>
 </body>
