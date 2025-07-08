@@ -33,23 +33,31 @@
   <section class="search-section">
     <h2>Find your car</h2>
     <form id="searchForm">
-      <select name="manufacturer">
-        <option>Manufacturer</option>
-        <option>BMW</option>
-        <option>Toyota</option>
-      </select>
-      <select name="category">
-        <option>Category</option>
-        <option>SUV</option>
-        <option>Sedan</option>
-      </select>
-      <select name="year">
-        <option>Year</option>
-        <option>2023</option>
-        <option>2022</option>
-      </select>
+     <input type="text" id="search" placeholder="Search by name">
+      <select id="manufacturerFilter"></select>
+      <select id="categoryFilter"></select>
       <button type="submit" class="btn-primary">Search now</button>
     </form>
+  </section>
+
+  <section class="results">
+    <table id="carsTable">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Name</th>
+          <th>Year</th>
+          <th>Manufacturer</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="compareBtn" class="btn-primary">Compare Selected</button>
+    <div id="details"></div>
+    <div id="compare"></div>
+    <div id="recommendations"></div>
   </section>
 
   <!-- Features -->
