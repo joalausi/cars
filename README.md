@@ -21,3 +21,6 @@ The Go server exposes the following endpoints:
 - `GET /api/categories` and `GET /api/categories/{id}` – category info.
 - `GET /api/recommendations` – recommended models based on `manufacturerId` or `categoryId`.
 
+## Contact
+
+For more information, feel free to reach out on Discord: **joalausi**
