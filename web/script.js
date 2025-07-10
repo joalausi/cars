@@ -52,7 +52,7 @@ async function showDetails(id) {
   const div = document.getElementById('details');
   div.innerHTML = `
     <h2>${data.name}</h2>
-    <img src="/images/${data.image}" alt="${data.name}">
+    <img src="/images/${data.image}" alt="${data.name}" width="600" height="400">
     <p><strong>Year:</strong> ${data.year}</p>
     <p><strong>Engine:</strong> ${data.specifications.engine}</p>
     <p><strong>Horsepower:</strong> ${data.specifications.horsepower}</p>

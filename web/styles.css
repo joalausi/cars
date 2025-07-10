@@ -159,3 +159,18 @@ th {
 tbody tr:nth-child(even) {
   background: #1a1a1a;
 }
+
+/* Car details section */
+#details {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+#details img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
